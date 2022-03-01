@@ -1,7 +1,7 @@
 .main {
     
     &__content {
-        height: 85%;
+        height: 80%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -306,7 +306,85 @@
     }
 
     &__action  {
-        height: 15%;
+        // height: 15%;
+        border-top: 1px solid #E2E2E8;
+        box-shadow: 50px -15px 30px rgba(120, 118, 148, 0.05);
         width: 100%;
+
+        padding: 25px 65px;
+        display: flex;
+        &_nms {
+            margin-right: 35px;
+            &_item{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                opacity: .6;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+
+            &_item.mn {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 33px;
+                margin-bottom: 23px;
+            }
+        }
+
+
+        &_list {
+            display: flex;
+
+            &_item {
+                width: 98px;
+                margin: 0 12.5px;
+                .head {
+                    background: rgba(110, 57, 223, 0.2);
+                    border-radius: 4px 4px 0 0 ;
+                    padding: 8px 10px;
+                    color: #936CE8;
+                    font-weight: 600;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+                .price {
+                    padding: 13px 10px 5px 10px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 25px;
+                    background: rgba(110, 57, 223, 0.08);
+                }
+
+                .saving {
+                    padding: 5px 10px 7px 10px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 25px;
+                    background: rgba(110, 57, 223, 0.08);
+                    border-radius: 0  0  4px 4px ;
+                }
+            }
+        }
+
+        &_btn {
+            display: flex;
+            align-items: center;
+            margin-left: 85px;
+            button {
+                padding: 7px 20px;
+                background: #6E39DF;
+                border-radius: 10px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
     }
 }

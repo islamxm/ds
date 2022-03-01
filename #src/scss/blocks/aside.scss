@@ -73,14 +73,14 @@
 
         &_btn {
             padding: 7px 21px;
-            border: 1px solid var(--purp);
+            border: 1px solid #6E39DF;
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
             cursor: pointer;
-            background-color: var(--purp);
+            background: #6E39DF;
             color: #fff;
             @include def-anim;
             
@@ -97,10 +97,10 @@
 
         &_btn.reset {
             background-color: transparent;
-            color: var(--purp);
+            color: #6E39DF;
 
             &:hover {
-                background-color: var(--purp);
+                background: #6E39DF;;
                 color: #fff;
             }
         }
