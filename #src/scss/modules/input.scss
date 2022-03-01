@@ -1,0 +1,27 @@
+.input {
+
+    span {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    input {
+        padding: 3px 7px;
+        width: 80px;
+        background: rgba(236, 233, 242, 0.8);
+        border-radius: 4px;
+    }
+}
+
+.input.disabled {
+    pointer-events: none;
+
+    span {
+
+    }
+
+    input {
+        opacity: .6;
+    }
+}

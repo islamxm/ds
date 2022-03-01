@@ -1,0 +1,9 @@
+:root {
+
+    --purp: #59536B;
+    --purp_l: #6E39DF;
+}
+
+@mixin def-anim {
+    transition: all .3s ease;
+}

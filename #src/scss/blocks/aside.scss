@@ -1,0 +1,108 @@
+.aside {
+    padding: 30px 0;
+    padding-bottom: 0;
+
+    &__in {
+        height: 90%;
+        padding: 0 30px;
+    }
+
+    &__part {
+        margin-bottom: 18px;
+        &_title {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 10px;
+            opacity: .6;
+        }
+
+        &_list {
+            width: 100%;
+            border-bottom: 1px solid #E2E2E8;
+
+
+        }
+
+        &_item {
+            padding: 8px 0;
+            border-top: 1px solid #E2E2E8;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            color: var(--purp);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+
+        &_add {
+            padding: 3px 7px;
+            border: 1px solid #D5D4DA;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            @include def-anim;
+
+            &:hover {
+                background-color: var(--purp);
+                color: #fff;
+                border-color: var(--purp);
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        height: 10%;
+        border-top: 1px solid #E2E2E8;
+        box-shadow: 50px -15px 30px rgba(120, 118, 148, 0.05);
+
+        &_btn {
+            padding: 7px 21px;
+            border: 1px solid var(--purp);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            cursor: pointer;
+            background-color: var(--purp);
+            color: #fff;
+            @include def-anim;
+            
+            &:first-child {
+                margin-right: 10px;
+            }
+
+            &:last-child {
+                margin-left: 10px;
+            }
+
+            
+        }
+
+        &_btn.reset {
+            background-color: transparent;
+            color: var(--purp);
+
+            &:hover {
+                background-color: var(--purp);
+                color: #fff;
+            }
+        }
+    }
+}
