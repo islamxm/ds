@@ -56,7 +56,7 @@
 
             .val_1 {
                 left: 33%;
-                top: 48%;
+                top: 47%;
             }
 
             .val_2 {
@@ -112,7 +112,7 @@
         }
 
         &_item_r {
-            top: 21%;
+            top: 19%;
             left: 13%;
 
             &:after {
@@ -148,7 +148,7 @@
         }
 
         &_item_bo {
-            bottom: 23%;
+            bottom: 22%;
             left: 5%;
 
             &:after {
@@ -159,13 +159,13 @@
             }
         }   
         &_item_dc {
-            bottom: 5%;
+            bottom: 4%;
             right: 7%;
 
             &:after {
                 position: absolute;
-                left: -175px;
-                top: -122px;
+                left: -176px;
+                top: -120px;
                 content: url('../img/line-5.svg');
             }
         }
@@ -375,6 +375,9 @@
             display: flex;
             align-items: center;
             margin-left: 85px;
+            flex: 1 0 auto;
+            justify-content: flex-end;
+
             button {
                 padding: 7px 20px;
                 background: #6E39DF;

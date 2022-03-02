@@ -349,7 +349,7 @@ body {
 }
 .main__content_in .val_1 {
   left: 33%;
-  top: 48%;
+  top: 47%;
 }
 .main__content_in .val_2 {
   right: 36%;
@@ -414,7 +414,7 @@ body {
   color: var(--purp);
 }
 .main__content_item_r {
-  top: 21%;
+  top: 19%;
   left: 13%;
 }
 .main__content_item_r:after {
@@ -444,7 +444,7 @@ body {
   content: url("../img/line-3.svg");
 }
 .main__content_item_bo {
-  bottom: 23%;
+  bottom: 22%;
   left: 5%;
 }
 .main__content_item_bo:after {
@@ -454,13 +454,13 @@ body {
   top: -55px;
 }
 .main__content_item_dc {
-  bottom: 5%;
+  bottom: 4%;
   right: 7%;
 }
 .main__content_item_dc:after {
   position: absolute;
-  left: -175px;
-  top: -122px;
+  left: -176px;
+  top: -120px;
   content: url("../img/line-5.svg");
 }
 .main__content_item_cl_f {
@@ -642,6 +642,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 85px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .main__action_btn button {
   padding: 7px 20px;
