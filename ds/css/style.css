@@ -421,7 +421,7 @@ body {
   position: absolute;
   content: url("../img/line-1.svg");
   right: -74px;
-  bottom: -69px;
+  bottom: -65px;
 }
 .main__content_item_im {
   top: 4%;
@@ -450,8 +450,8 @@ body {
 .main__content_item_bo:after {
   position: absolute;
   content: url("../img/line-4.svg");
-  right: -87px;
-  top: -55px;
+  right: -88px;
+  top: -58px;
 }
 .main__content_item_dc {
   bottom: 4%;
@@ -464,7 +464,7 @@ body {
   content: url("../img/line-5.svg");
 }
 .main__content_item_cl_f {
-  top: 20%;
+  top: 18%;
   right: 0%;
 }
 .main__content_item_cl_f:after {
