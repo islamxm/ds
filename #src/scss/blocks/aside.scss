@@ -40,6 +40,36 @@
                 font-size: 14px;
                 line-height: 19px;
             }
+
+            .custom__inp {
+                position: relative;
+                input {
+                    width: 171px;
+                    padding: 2px 7px;
+                    padding-right: 15px;
+                    background: rgba(236, 233, 242, 0.8);
+                    border-radius: 4px;
+                    color: #59536B;
+                    font-size: 14px;
+                    line-height: 19px;
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: all;
+                    position: static;
+                    z-index: 0;
+                }
+
+                button{
+                    position: absolute;
+                    top: 0;
+                    right: 5px;
+                    content: url('../img/inp-res.svg');
+                    z-index: 1;
+                    cursor: pointer;
+                }
+
+            }
         }
 
         &_add {

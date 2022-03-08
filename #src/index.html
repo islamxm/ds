@@ -130,18 +130,21 @@
                             <input type="text" value="0">
                         </div>
                     </div>
-                    <button class="aside__part_add" type="button">
+                    <button class="aside__part_add" type="button" id="branchAdd">
                         +
                     </button>
                 </div>
                 <div class="aside__part">
-                    <h2 class="aside__part_title">Data Centers</h2>
+                    <h2 class="aside__part_title">Data Center / CoLo / Edge (Max Band...</h2>
                     <div class="aside__part_list">
                         <div class="aside__part_item input">
-                            <span>Number of DC</span>
+                            <span>DC/CoLo/EDGE 1</span>
                             <input type="text" value="2">
                         </div>
                     </div>
+                    <button class="aside__part_add" type="button" id="dcAdd">
+                        +
+                    </button>
                 </div>
                 <div class="aside__part">
                     <h2 class="aside__part_title">Work from home</h2>
@@ -153,7 +156,7 @@
                     </div>
                 </div>
                 <div class="aside__part">
-                    <h2 class="aside__part_title">Cloud connectivity</h2>
+                    <h2 class="aside__part_title">Public cloud connectivity</h2>
                     <div class="aside__part_list">
                         <div class="aside__part_item checkbox">
                             <input type="checkbox" id="ch8">
@@ -200,7 +203,12 @@
                         <div class="aside__part_item checkbox">
                             <input type="checkbox" id="ch11">
                             <label for="ch11">
-                                <span>Name</span>
+                                <div class="custom__inp">
+                                    <input type="text" value="Custom">
+                                    <button class="inp_res" type="button">
+                                        <img src="./img/inp-res.svg" alt="">
+                                    </button>
+                                </div> 
                                 <div class="icon">
                                     <div class="icon__in">
                                         <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -212,6 +220,60 @@
                             </label>
                         </div>
                     </div>
+                    <button class="aside__part_add" type="button" id="pubcAdd">
+                        +
+                    </button>
+                </div>
+
+                <div class="aside__part">
+                    <h2 class="aside__part_title">SAAS connectivity</h2>
+                    <div class="aside__part_list">
+                        <div class="aside__part_item checkbox">
+                            <input type="checkbox" id="ss1">
+                            <label for="ss1">
+                                <span>box</span>
+                                <div class="icon">
+                                    <div class="icon__in">
+                                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.62829 6.1773L0.947745 3.59953L0 4.51089L3.62829 8L11 0.91136L10.0523 8.60397e-06L3.62829 6.1773Z" fill="white"/>
+                                            </svg>
+                                            
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="aside__part_item checkbox">
+                            <input type="checkbox" id="ss2">
+                            <label for="ss2">
+                                <span>Office 365</span>
+                                <div class="icon">
+                                    <div class="icon__in">
+                                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.62829 6.1773L0.947745 3.59953L0 4.51089L3.62829 8L11 0.91136L10.0523 8.60397e-06L3.62829 6.1773Z" fill="white"/>
+                                            </svg>
+                                            
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="aside__part_item checkbox">
+                            <input type="checkbox" id="ss3">
+                            <label for="ss3">
+                                <span>salesforce</span>
+                                <div class="icon">
+                                    <div class="icon__in">
+                                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.62829 6.1773L0.947745 3.59953L0 4.51089L3.62829 8L11 0.91136L10.0523 8.60397e-06L3.62829 6.1773Z" fill="white"/>
+                                            </svg>
+                                            
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="aside__part_add" type="button" id="chAdd">
+                        +
+                    </button>
                 </div>
             </div>
 
@@ -219,9 +281,25 @@
                 <button class="aside__action_btn">Apply</button>
                 <button class="aside__action_btn reset" type="reset">Reset</button>
             </div>
-            
+
         </form>
         <main class="main box">
+            <div class="main__head">
+                <div class="main__head_item">
+                    <input class="main__head_item_inp" type="text" placeholder="Customer name">
+                    <button class="main__head_item_btn" type="button">
+                        <img src="./img/edit.svg">
+                    </button>
+                </div>
+                <div class="main__head_action">
+                    <button class="import">
+                        <img src="./img/import.svg" alt="">
+                    </button>
+                    <button class="export">
+                        <img src="./img/export.svg" alt="">
+                    </button>
+                </div>
+            </div>
             <div class="main__content">
                 <div class="main__content_mid">
                     <svg width="414" height="416" viewBox="0 0 414 416" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -230,7 +308,9 @@
                         </svg>
                         
                         <div class="main__content_mid_in">
-                            <img src="./img/mid-logo.svg" alt="mid-logo">
+                            <!-- <img src="./img/mid-logo.svg" alt="mid-logo"> -->
+                            <span>.jpg, .png, .svg</span>
+                            <span> < 200 MB</span>
                         </div>
                 </div>
                 
@@ -298,6 +378,9 @@
                             <div class="cloud__it" id="it4">
                                 <img src="./img/logo-4.png" alt="">
                             </div>
+                            <div class="cloud__val">
+                                +2
+                            </div>
                         </div>
 
                     </div>
@@ -333,6 +416,7 @@
             <div class="main__action">
                 <div class="main__action_nms">
                     <div class="main__action_nms_item mn">Pricing</div>
+                    <div class="main__action_nms_item">Total Throughput</div>
                     <div class="main__action_nms_item">InsitePacket Price per Month</div>
                     <div class="main__action_nms_item">Saving from competition</div>
                 </div>
@@ -341,6 +425,9 @@
                     <div class="main__action_list_item">
                         <div class="head">
                             1 tenant
+                        </div>
+                        <div class="price">
+                            10
                         </div>
                         <div class="price">
                             $1000
@@ -355,6 +442,9 @@
                             50 tenant
                         </div>
                         <div class="price">
+                            500
+                        </div>
+                        <div class="price">
                             $1000
                         </div>
                         <div class="saving">
@@ -365,6 +455,9 @@
                     <div class="main__action_list_item">
                         <div class="head">
                             100 tenant
+                        </div>
+                        <div class="price">
+                            1000
                         </div>
                         <div class="price">
                             $1000
@@ -382,6 +475,15 @@
                 </div>
             </div>
         </main>
+    </div>
+
+    <div class="bt">
+        <div class="bt__img">
+            <img src="./img/bt.svg">
+        </div>
+        <div class="bt__text">
+            Powered by The Team
+        </div>
     </div>
     
     
