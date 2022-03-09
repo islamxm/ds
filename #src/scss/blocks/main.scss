@@ -1,7 +1,9 @@
 .main {
-    
-
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
     &__head {
         height: 10%;
         display: flex;
@@ -55,6 +57,7 @@
         position: relative;
         padding: 30px 60px;
         padding-bottom: 0;
+        
 
         &_mid {
             position: absolute;
