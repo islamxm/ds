@@ -1,7 +1,7 @@
 .main {
     
 
-
+    height: 100%;
     &__head {
         height: 10%;
         display: flex;
@@ -46,13 +46,15 @@
     }
     &__content {
         
-        height: 70%;
+        // height: 650px;
+        height: 570px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
         padding: 30px 60px;
+        padding-bottom: 0;
 
         &_mid {
             position: absolute;
@@ -140,7 +142,7 @@
             }
 
             .val_4 {
-                bottom: 36%;
+                bottom: 42%;
                 right: 34%;
             }
         }
@@ -225,7 +227,7 @@
             }
         }   
         &_item_dc {
-            bottom: 4%;
+            bottom: 10%;
             right: 7%;
 
             &:after {
@@ -320,7 +322,7 @@
         }
 
         &_item_cl_s {
-            top: 50%;
+            top: 44%;
             right: 0%;
 
             &:after {
@@ -387,7 +389,7 @@
     }
 
     &__action  {
-        // height: 15%;
+        height: 200px;
         border-top: 1px solid #E2E2E8;
         box-shadow: 50px -15px 30px rgba(120, 118, 148, 0.05);
         width: 100%;
